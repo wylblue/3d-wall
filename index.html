@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>three.js css3d - periodic table</title>
+		<title>会议签到3d版</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
@@ -120,7 +120,7 @@
 
 		<div id="container"></div>
 		<div id="info">3D签到墙
-			<img style="position: fixed;top: 0;left:0;" src="./img/QRCode.png" alt="扫描此处二维码">
+			<img style="position: fixed;top: 0;left:0; width: 150px;height: 150px;" src="./img/QRCode.png" alt="扫描此处二维码">
 			<audio  height="100" width="100" autoplay="autoplay" loop="-1">
 			<source src="./img/music.mp3" type="audio/mp3" />
 			<source src="./img/music.mp3" type="audio/ogg" />
@@ -136,9 +136,9 @@
 
 		<div class="show_info animated" style="display:none;">
 			<div class="info_my">
-				<img src="img/c.png" />
+				<img src="img/e.png" />
 				<div class="info_mem">
-					<div class="nickname">smile的微笑</div>
+					<div class="nickname">指尖亲吻、烟火</div>
 					<div class="id">已签到</div>
 					<!-- <div class="vote">票数：123</div> -->
 				</div>
@@ -167,7 +167,7 @@
 					$('.show_info').removeClass(_in[rand_in]);
 					// 更改展示的图片
 					var img = document.getElementsByClassName('element')[CurPersonNum].getElementsByTagName('img')[0];
-					img.setAttribute('src','img/b.png');
+					img.setAttribute('src','img/d.png');
 					++CurPersonNum;
 					setTimeout(function(){
 						$('.show_info').addClass(_out[rand_out]);
@@ -182,7 +182,7 @@
 			// 生成虚拟数据
 	        for(var i=0;i<199;i++){
 				personArray.push({
-		            image: "img/a.png"
+		            image: "img/avator.png"
 		        });
 	        }
 
